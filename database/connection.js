@@ -15,7 +15,7 @@ module.exports = function(){
 
     db.connect((err) => {
         if(err){
-            console.log(err);
+            console.log("connection error : " + err);
         }
         console.log("connected...");
     });
