@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>group finder</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="container">
+            <div id="header">
+                <div>
+                    <img src="tu.png" id="tu">
+                </div>
+            </div>
+            <div id="center">
+                <div id="detail">
+                    <div>
+                        <h1 id="title">أبحث عن قروب للمادة</h1>
+                    </div>
+                    <div>
+                        <h5 id="afterTitle">تخصص هندسة حاسب فقط</h5>
+                    </div>
+                </div>
+                <div id="formDiv">
+                    <% if(result){ %>
+                        <div>
+                            <a href="<%= result %>" class="link"><%= result %></a>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+            <div id="footer">
+                <div>
+                    <h6 id="info">الموقع مصمم من طالب ولا علاقة للجامعة بذلك</h6>
+                </div>
+            </div>
+        </div>
+        <div id="preContainer">
+            <div id="circle1" class="circleD1 circle"></div>
+            <div id="circle2" class="circleD2 circle"></div>
+            <div id="circle3" class="circleD3 circle"></div>
+            <div id="circle4" class="circleD1 circle"></div>
+            <div id="circle5" class="circleD2 circle"></div>
+            <div id="circle6" class="circleD3 circle"></div>
+        </div>
+    </div>
+</body>
+</html>
