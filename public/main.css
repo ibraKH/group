@@ -151,8 +151,29 @@ body{
         height: 200px;
     }
     .link{
+        font-size: xx-small;
         text-decoration: none;
+        color: goldenrod;
+    }
+    #stat{
         color: white;
+        text-align: center;
+        font-family: ar;
+        font-size: smaller;
+    }
+    .back{
+        font-family: ar;
+        color: white;
+        text-decoration: none;
+    }
+    .backBtn{
+        font-family: ar;
+        text-align: center;
+        width: 60px;
+        height: 15px;
+        background: #f8c51e;
+        border-radius: 20px;
+        border: none;
     }
 }
 @media only screen and (min-width: 600px) {

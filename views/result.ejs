@@ -27,7 +27,16 @@
                 <div id="formDiv">
                     <% if(result){ %>
                         <div>
-                            <a href="<%= result %>" class="link"><%= result %></a>
+                            <div>
+                                <p id="stat">: <%= message %></p>
+                            </div>
+                            <div>
+                                <% if(result.length > 0){ %>
+                                    <a href="<%= result %>" class="link"><%= result[0].link %></a>
+                                <% }else{ %>
+                                    <a href="/" class="back"><button class="backBtn">العودة</button></a>
+                                <% } %>
+                            </div>
                         </div>
                     <% } %>
                 </div>

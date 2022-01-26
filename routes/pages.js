@@ -16,7 +16,24 @@ router.post("/search", (req,res) => {
             console.log(err);
         }
 
-        res.render("result", {result: "helllksadjffds.kjsdfha"});
+        if(result.length > 0){
+            if(serachFor.division == result[0].division){
+                res.render("result", {
+                    message: "قروب الشعبة",
+                    result
+                })
+            }else{
+                res.render("result", {
+                    message: "لا يوجد قروب لنفس الشعبة لكن يوجد قروب للمادة",
+                    result
+                })
+            }
+        }else{
+            res.render("result", {
+                message: "لايوجد قروب",
+                result
+            })
+        }
     })
 })
 
