@@ -175,6 +175,9 @@ body{
         border-radius: 20px;
         border: none;
     }
+    .hide{
+        display: none;
+    }
 }
 @media only screen and (min-width: 600px) {
     #parent{
@@ -187,9 +190,164 @@ body{
     }
     #container{
         position: absolute;
-        width: 35%;
-        height: 35%;
-        background-color: #3e3e3ec9;
+        left: 30%;
+        top: 30%;
+        width: 40%;
+        height: 40%;
+        background-color: #3e3e3eaf;
         border-radius: 20px;
+    }
+    #container:hover{
+        box-shadow: 20px 20px 11px 1px rgb(218, 165, 32);
+    }
+    #preContainer{
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        width: 40%;
+        height: 40%;
+        border-radius: 20px;
+        z-index: -1;
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        overflow: hidden;
+    }
+    #header{
+        width: 100%;
+        height: 10%;
+    }
+    #center{
+        width: 100%;
+        height: 85%;
+    }
+    #footer{
+        text-align: center;
+        margin-top: -38px;
+        width: 100%;
+    }
+    #info{
+        color: white;
+        font-family: ar;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    #tu{
+        margin: 8px 0 0 8px;
+        width: 60px;
+        height: 40px;
+    }
+    #detail{
+        margin-top: 50px;
+        display: inline-table;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 40%;
+    }
+    #title{
+        color: white;
+        font-family: ar;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 22px;
+    }
+    #afterTitle{
+        margin: -20px;
+        color: gray;
+        font-family: ar;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 22px;
+    }
+    #formDiv{
+        width: 100%;
+        height: 59%;
+        display: inline-table;
+        justify-content: center;
+        text-align: center;
+    }
+    #course{
+        display: inline-table;
+        justify-content: center;
+    }
+    #division{
+        display: inline-table;
+        justify-content: center;
+    }
+    #btnSubmit{
+        font-family: ar;
+        text-align: center;
+        width: 60px;
+        height: 15px;
+        background: #f8c51e;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .dInput{
+        border: none;
+        border-radius: 20px;
+        width: 135px;
+        height: 20px;
+        margin: 5px;
+    }
+    input::placeholder {
+        margin-right: 5px;
+        font-family: ar;
+        text-align: right;
+    }
+    .circleD1{
+        background: radial-gradient(50% 50% at 50% 50%, #7000FF 0%, rgba(112, 0, 255, 0) 100%);
+    }
+    .circleD2{
+        background: radial-gradient(50% 50% at 50% 50%, #FF9900 0%, rgba(255, 153, 0, 0) 100%);
+    }
+    .circleD3{
+        background: radial-gradient(50% 50% at 50% 50%, #00E0FF 0%, rgba(0, 224, 255, 0) 100%);
+    }
+    .circle{
+        width: 120px;
+        height: 116px;
+    }
+    #circle2{
+        width: 200px;
+        height: 200px;
+    }
+    #circle6{
+        width: 200px;
+        height: 200px;
+    }
+    .link{
+        font-size: larger;
+        text-decoration: none;
+        color: goldenrod;
+    }
+    #stat{
+        color: white;
+        text-align: center;
+        font-family: ar;
+        font-size: larger;
+    }
+    .back{
+        font-family: ar;
+        color: white;
+        text-decoration: none;
+    }
+    .backBtn{
+        font-family: ar;
+        text-align: center;
+        width: 60px;
+        height: 15px;
+        background: #f8c51e;
+        border-radius: 20px;
+        border: none;
     }
 }
